@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <!-- Estilo para destacar elementos da lista -->
+    <style>
+        .destaque {
+            color: blue;
+            font-weight: bold;
+            background-color: lightyellow;
+        }
+    
+        /* Estilo aplicado às tarefas concluídas */
+        .feito {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1 id="titulo">Meu Blog</h1>
+
+    <!-- Parágrafos com a classe texto -->
+    <p class="texto">Bem-vindo ao meu blog!</p>
+    <p class="texto">Aqui compartilho meus estudos de programação.</p>
+    <p class="texto">Estou aprendendo JavaScript, DOM e Eventos.</p>
+
+    
+    <!-- Título da lista -->
+    <h2>Minha lista de atividades</h2>
+
+    <!-- Lista com três itens definidos diretamente no HTML -->
+    <ul id="lista">
+        <li>Aprender HTML</li>
+        <li>Aprender CSS</li>
+        <li>Aprender JavaScript</li>
+    </ul>
+
+    <!-- Botão utilizado para testar eventos -->
+    <button id="botao">Clique aqui</button>
+    
+    <!-- Campo utilizado para testar o evento keyup -->
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" id="nome" placeholder="Seu nome">
+    
+    <!-- Formulário para adicionar novas tarefas -->
+    <h2>Adicionar nova tarefa</h2>
+
+    <form id="formulario">
+        <!-- Campo para digitar uma tarefa -->
+        <label for="tarefa">Nome da tarefa:</label>
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Adicionar tarefa</button>
+    </form>
+
+    <!-- Conecta o arquivo JavaScript ao HTML -->
+    <script src="app.js"></script>
+    
+</body>
+</html>
